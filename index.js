@@ -78,7 +78,10 @@ app.listen(PORT, () => {
 app.get('/', async (req, res) => {
   // res.send('Hey this is my API running 🚀🚀')
 
-  res.send(authorize().then(listMajors).catch(console.error);)
+  authorize()
+    .then(res.send(listMajors))
+    .catch(console.error);
+
 })
 
 app.post('/webhook', (req, res) => {
