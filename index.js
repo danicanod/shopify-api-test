@@ -13,7 +13,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', async (req, res) => {
-  res.send('Hey this is my API running 🚀🚀')
+  // res.send('Hey this is my API running 🚀🚀')
   
   const auth = new google.auth.GoogleAuth({
     keyFile: './files/credentials.json',
