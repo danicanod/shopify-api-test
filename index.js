@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/webhook', (req, res) => {
   console.log(req)
-  res.send('This is my about route..... ')
+  res.send('Shopify request received...')
 })
 
 // Export the Express API
