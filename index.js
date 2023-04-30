@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hey this is my API running 🚀🚀')
 })
 
-app.get('/webhook', (req, res) => {
+app.post('/webhook', (req, res) => {
   console.log(req)
   res.send('Shopify request received...')
 })
