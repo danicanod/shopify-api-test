@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
   res.send('Hey this is my API running 🥳')
 })
 
-app.get('/about', (req, res) => {
+app.post('/webhook', (req, res) => {
+  console.log(req)
   res.send('This is my about route..... ')
 })
 
