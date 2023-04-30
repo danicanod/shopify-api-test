@@ -16,7 +16,7 @@ app.get('/', async (req, res) => {
   // res.send('Hey this is my API running 🚀🚀')
   
   const auth = new google.auth.GoogleAuth({
-    keyFile: './files/credentials.json',
+    keyFile: 'credentials.json',
     scopes: 'https://www.googleapis.com/auth/spreadsheets'
   })
 
