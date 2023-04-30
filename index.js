@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.send('Hey this is my API running 🚀🚀')
 })
 
-app.post('/notifications', (req, res) => {
+app.post('/webhook', (req, res) => {
   console.log(req.body)
   res.send('Shopify request received...')
 })
