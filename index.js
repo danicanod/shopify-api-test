@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
+  res.send('Hey this is my API running 🚀🚀')
 })
 
 app.post('/webhook', (req, res) => {
